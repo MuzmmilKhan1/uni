@@ -15,7 +15,7 @@ body{
 /* (A) FIXED WRAPPER */
 .hwrap {
     overflow: hidden; /* HIDE SCROLL BAR */
-    background: rgb(17, 207, 0);
+    background: rgb(207, 0, 0);
     color: white;
     font-weight: bold;
   }
@@ -38,7 +38,7 @@ body{
     0% { transform: translate3d(100%, 0, 0); }
     100% { transform: translate3d(-218%, 0, 0); }
   }
-  .hmove { animation: tickerh linear 25s infinite;}
+  .hmove { animation: tickerh linear 50s infinite;}
   .hmove:hover { animation-play-state: paused; }
   #nav{
     display: flex;
@@ -46,7 +46,7 @@ body{
     position: sticky;
   }
   .navbar-brand{
-    width: 35%;
+    width: 40%;
   }
   .navbar-brand img{
     display: block;
@@ -139,6 +139,7 @@ body{
     text-decoration: none;
     color: black;
   }
+  
   @media only screen and (max-width: 786px){
     body{
       overflow-x: hidden;
@@ -153,4 +154,10 @@ body{
       height: 120vh;
     }
 
+    .courses{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
